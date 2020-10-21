@@ -1,0 +1,1 @@
+// getNews API fetch logic
