@@ -4,6 +4,7 @@
 import React, { Component } from 'react'
 import Loading from '../presentational/Loading'
 import { getNewsArticles } from '../services/news-api'
+import Article from '../presentational/Article'
 
 export default class ArticlesList extends Component {
   // set state 
@@ -32,7 +33,7 @@ export default class ArticlesList extends Component {
 
     return (
       <div>
-        not loading
+        <Article title="Hello" author="John Smith" description="description here"/>
       </div>
     )
   }
