@@ -1,12 +1,12 @@
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
-import App from './App';
+import Loading from './presentational/loading';
 
 describe('App component', () => {
   afterEach(() => cleanup());
   
-  it('renders App', () => {
-    const { asFragment } = render(<App />);
+  it('renders loading spinner', () => {
+    const { asFragment } = render(<Loading />);
     expect(asFragment()).toMatchSnapshot();
   });
 });

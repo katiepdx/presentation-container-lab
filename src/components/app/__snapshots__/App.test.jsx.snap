@@ -1,9 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App component renders App 1`] = `
+exports[`App component renders loading spinner 1`] = `
 <DocumentFragment>
-  <h1>
-    Hello World
-  </h1>
+  <img
+    alt="grey bubble loading spinner"
+    src="https://miro.medium.com/max/882/1*9EBHIOzhE1XfMYoKz1JcsQ.gif"
+  />
 </DocumentFragment>
 `;
