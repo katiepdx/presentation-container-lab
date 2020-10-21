@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
-import Loading from './presentational/loading';
+import Loading from './presentational/Loading';
 
 describe('App component', () => {
   afterEach(() => cleanup());
