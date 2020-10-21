@@ -31,10 +31,9 @@ export default class ArticlesList extends Component {
     // conditional rendering 
     if(loading) return <Loading />
 
+    // Use array from state
     return (
-      <div>
-        <Article title="Hello" author="John Smith" description="description here"/>
-      </div>
+      foundArticles.map(article => (<Article title={article.title} author={article.author} description={article.description}/>))
     )
   }
 }
