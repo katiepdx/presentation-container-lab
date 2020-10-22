@@ -3,37 +3,48 @@
 
 import React, { Component } from 'react'
 import { getNewsArticles } from '../services/news-api'
-import ArticlesList from '../presentational/ArticlesList'
 import Loading from '../presentational/Loading'
+import Search from '../presentational/Search'
+import ArticlesList from '../presentational/ArticlesList'
 
 export default class NewsSearch extends Component {
   // set state 
   state = {
-    loading: true,
-    userSearch: 'bitcoin',
+    loading: false,
+    search: '',
     foundArticles: []
   }
 
-    // when page loads, fetch from API, update state, and change loading to false
-    async componentDidMount() {
+    handleChange = (e) => {
+      this.setState({ search: e.target.value })
+    }
+
+    handleClick = async (e) => {
+      e.preventDefault();
+
+      // set loading to true to get loading spinner
+      this.setState({ loading: true });
+
       // fetch from api using user's search
       const foundArticles = await getNewsArticles();
-    
-      // set state 
-      this.setState({ foundArticles: foundArticles, loading: false})
+
+      // update state with user's search
+      this.setState({ foundArticles: foundArticles, loading: false })
     }
 
   render() {
         // deconstruct state 
         const { loading, foundArticles } = this.state;
 
-        console.log(foundArticles, 'ARTICLES LIST IN STATE IN RENDER')
         // conditional rendering 
         if(loading) return <Loading />
     
         // Use array from state
         return (
-          <ArticlesList foundArticles={foundArticles}/>
+          <div>
+            <Search onChange={this.handleChange} onClick={this.handleClick} />
+            <ArticlesList foundArticles={foundArticles}/>
+          </div>
         )
       }
   }

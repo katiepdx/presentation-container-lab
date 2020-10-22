@@ -2,9 +2,21 @@
 
 exports[`App component renders NewsSearch 1`] = `
 <DocumentFragment>
-  <img
-    alt="grey bubble loading spinner"
-    src="https://miro.medium.com/max/882/1*9EBHIOzhE1XfMYoKz1JcsQ.gif"
-  />
+  <div>
+    <div>
+      <label>
+        Search
+      </label>
+      <input
+        id="text"
+        name="text"
+        type="text"
+        value=""
+      />
+      <button>
+        Go!
+      </button>
+    </div>
+  </div>
 </DocumentFragment>
 `;
