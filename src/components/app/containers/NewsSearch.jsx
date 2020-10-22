@@ -26,7 +26,7 @@ export default class NewsSearch extends Component {
       this.setState({ loading: true });
 
       // fetch from api using user's search
-      const foundArticles = await getNewsArticles();
+      const foundArticles = await getNewsArticles(this.state.search);
 
       // update state with user's search
       this.setState({ foundArticles: foundArticles, loading: false })
