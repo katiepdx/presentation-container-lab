@@ -3,7 +3,7 @@
 
 import React, { Component } from 'react'
 import { getNewsArticles } from '../services/news-api'
-import Article from '../presentational/Article'
+import ArticlesList from '../presentational/ArticlesList'
 import Loading from '../presentational/Loading'
 
 export default class NewsSearch extends Component {
@@ -33,7 +33,7 @@ export default class NewsSearch extends Component {
     
         // Use array from state
         return (
-          foundArticles.map(article => (<Article key={article.title} title={article.title} author={article.author} description={article.description}/>))
+          <ArticlesList foundArticles={foundArticles}/>
         )
       }
   }
