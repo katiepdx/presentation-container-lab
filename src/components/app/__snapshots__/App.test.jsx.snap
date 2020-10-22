@@ -3,6 +3,9 @@
 exports[`App component renders NewsSearch 1`] = `
 <DocumentFragment>
   <div>
+    <h1>
+      Welcome!
+    </h1>
     <div>
       <label>
         Search
