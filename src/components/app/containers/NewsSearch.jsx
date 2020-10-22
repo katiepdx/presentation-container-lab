@@ -22,6 +22,9 @@ export default class NewsSearch extends Component {
     handleClick = async (e) => {
       e.preventDefault();
 
+      // conditional
+      if(!this.state.search) return alert('Please enter a search')
+
       // set loading to true to get loading spinner
       this.setState({ loading: true });
 
@@ -42,6 +45,7 @@ export default class NewsSearch extends Component {
         // Use array from state
         return (
           <div>
+            <h1>Welcome!</h1>
             <Search onChange={this.handleChange} onClick={this.handleClick} />
             <ArticlesList foundArticles={foundArticles}/>
           </div>
