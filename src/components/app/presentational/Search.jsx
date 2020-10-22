@@ -21,8 +21,8 @@ const Search = ({ text, onChange, onClick }) => (
 // prop types 
 Search.propTypes = {
   text: propTypes.string,
-  onChange: propTypes.func.isRequired,
-  onClick: propTypes.func.isRequired
+  onChange: propTypes.func,
+  onClick: propTypes.func
 }
 
 export default Search;
