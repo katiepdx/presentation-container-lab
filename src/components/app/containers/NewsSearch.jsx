@@ -44,7 +44,7 @@ export default class NewsSearch extends Component {
     
         // Use array from state
         return (
-          <div>
+          <div data-testid="display">
             <h1>Welcome!</h1>
             <Search onChange={this.handleChange} onClick={this.handleClick} />
             <ArticlesList foundArticles={foundArticles}/>

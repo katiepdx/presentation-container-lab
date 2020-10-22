@@ -6,15 +6,16 @@ import propTypes from 'prop-types'
 
 const Search = ({ text, onChange, onClick }) => (
   <div>
-    <label>Search</label>
+    <label data-testid="Search">Search</label>
     <input
+    data-testid="search-input"
     id="text"
     type="text"
     name="text"
     value={text}
     onChange={onChange}
     />
-    <button onClick={onClick}>Go!</button>
+    <button data-testid="search-button" onClick={onClick}>Go!</button>
   </div>
 );
 

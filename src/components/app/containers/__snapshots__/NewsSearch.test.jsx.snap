@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsSearch container updates search field value to tree 1`] = `
+<input
+  data-testid="search-input"
+  id="text"
+  name="text"
+  type="text"
+  value=""
+/>
+`;

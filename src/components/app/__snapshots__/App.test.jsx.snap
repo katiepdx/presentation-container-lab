@@ -2,21 +2,28 @@
 
 exports[`App component renders NewsSearch 1`] = `
 <DocumentFragment>
-  <div>
+  <div
+    data-testid="display"
+  >
     <h1>
       Welcome!
     </h1>
     <div>
-      <label>
+      <label
+        data-testid="Search"
+      >
         Search
       </label>
       <input
+        data-testid="search-input"
         id="text"
         name="text"
         type="text"
         value=""
       />
-      <button>
+      <button
+        data-testid="search-button"
+      >
         Go!
       </button>
     </div>

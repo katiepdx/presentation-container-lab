@@ -3,16 +3,21 @@
 exports[`Search component renders Search 1`] = `
 <DocumentFragment>
   <div>
-    <label>
+    <label
+      data-testid="Search"
+    >
       Search
     </label>
     <input
+      data-testid="search-input"
       id="text"
       name="text"
       type="text"
       value=""
     />
-    <button>
+    <button
+      data-testid="search-button"
+    >
       Go!
     </button>
   </div>
