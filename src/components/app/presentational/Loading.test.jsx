@@ -3,10 +3,10 @@ import { render, cleanup } from '@testing-library/react';
 import Loading from './Loading';
 
 
-describe('App component', () => {
+describe('Loading component', () => {
   afterEach(() => cleanup());
   
-  it('renders NewsSearch', () => {
+  it('displays loading image', () => {
     const { asFragment } = render(<Loading />);
     expect(asFragment()).toMatchSnapshot();
   });

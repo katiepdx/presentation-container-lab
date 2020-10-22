@@ -1,6 +1,60 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`App component  1`] = `
+<DocumentFragment>
+  <img
+    alt="grey bubble loading spinner"
+    src="https://miro.medium.com/max/882/1*9EBHIOzhE1XfMYoKz1JcsQ.gif"
+  />
+</DocumentFragment>
+`;
+
+exports[`App component  NewsSearch 1`] = `
+<DocumentFragment>
+  <img
+    alt="grey bubble loading spinner"
+    src="https://miro.medium.com/max/882/1*9EBHIOzhE1XfMYoKz1JcsQ.gif"
+  />
+</DocumentFragment>
+`;
+
+exports[`App component displays  1`] = `
+<DocumentFragment>
+  <img
+    alt="grey bubble loading spinner"
+    src="https://miro.medium.com/max/882/1*9EBHIOzhE1XfMYoKz1JcsQ.gif"
+  />
+</DocumentFragment>
+`;
+
+exports[`App component displays loading  1`] = `
+<DocumentFragment>
+  <img
+    alt="grey bubble loading spinner"
+    src="https://miro.medium.com/max/882/1*9EBHIOzhE1XfMYoKz1JcsQ.gif"
+  />
+</DocumentFragment>
+`;
+
+exports[`App component displays loading image 1`] = `
+<DocumentFragment>
+  <img
+    alt="grey bubble loading spinner"
+    src="https://miro.medium.com/max/882/1*9EBHIOzhE1XfMYoKz1JcsQ.gif"
+  />
+</DocumentFragment>
+`;
+
 exports[`App component renders NewsSearch 1`] = `
+<DocumentFragment>
+  <img
+    alt="grey bubble loading spinner"
+    src="https://miro.medium.com/max/882/1*9EBHIOzhE1XfMYoKz1JcsQ.gif"
+  />
+</DocumentFragment>
+`;
+
+exports[`Loading component displays loading image 1`] = `
 <DocumentFragment>
   <img
     alt="grey bubble loading spinner"
