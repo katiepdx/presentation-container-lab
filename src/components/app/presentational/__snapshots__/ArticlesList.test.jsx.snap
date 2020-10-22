@@ -31,13 +31,13 @@ exports[`ArticlesList Component renders ArticlesList 1`] = `
   <article>
     <div>
       <h2>
-        Article Title 2
+        Article Title 3
       </h2>
       <h6>
-        Author 2
+        Author 3
       </h6>
       <p>
-        Description 2
+        Description 3
       </p>
     </div>
   </article>
